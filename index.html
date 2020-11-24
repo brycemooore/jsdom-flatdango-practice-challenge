@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
     <link rel="stylesheet" href="assets/index.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="src/filmcontroller.js"></script>
+    <script src="src/film.js"></script>
+    <script src="src/adapter.js"></script>
+    <script src="src/index.js"></script>
   </head>
   <body>
 
@@ -30,20 +34,13 @@
         <div class="list-container">
 
           <div class="ui divided list" id="films">
-            <div class="film item">
-              Don't worry about this div until you've completed the base deliverables.
-            </div>
-            <div class="film item">
-              Movie titles will go here.
-            </div>
           </div>
 
         </div>
       </div>
 
       <!-- poster -->
-      <div class="four wide column">
-        <img id="poster" src="assets/placeholderImage.png">
+      <div id="poster" class="four wide column">
       </div>
 
       <!-- showing info -->
@@ -61,7 +58,7 @@
                 </div>
             </div>
             <div class="extra content">
-              <div class="ui orange button">Buy Ticket</div>
+              <div id="buy-div" class="ui orange button">Buy Ticket</div>
             </div>
           </div>
 
@@ -69,6 +66,5 @@
       </div>
 
     </div>
-    <script src="src/index.js"></script>
   </body>
 </html>
